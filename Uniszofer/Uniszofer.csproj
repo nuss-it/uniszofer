@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Glowny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glowny.Designer.cs">
+      <DependentUpon>Glowny.cs</DependentUpon>
+    </Compile>
     <Compile Include="Klasa.cs" />
     <Compile Include="Konfiguracja.cs">
       <SubType>Form</SubType>
@@ -56,10 +62,28 @@
     <Compile Include="Konfiguracja.Designer.cs">
       <DependentUpon>Konfiguracja.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logowanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logowanie.Designer.cs">
+      <DependentUpon>Logowanie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings1.cs" />
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Glowny.resx">
+      <DependentUpon>Glowny.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Konfiguracja.resx">
       <DependentUpon>Konfiguracja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logowanie.resx">
+      <DependentUpon>Logowanie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,6 +103,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
