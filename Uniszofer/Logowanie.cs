@@ -27,5 +27,23 @@ namespace Uniszofer
         {
             Application.Exit();
         }
+
+        private void btnZaloguj_Click(object sender, EventArgs e)
+        {
+            int blad = 0;
+            if (blad == 0 && txtLogin.Text== "") { MessageBox.Show("Podaj Login"); blad++;}
+            if (blad == 0 && txtHaslo.Text == "") { MessageBox.Show("Podaj Hasło"); blad++; }
+
+            if (blad == 0)
+            { //formularz ok mozemy pytac baze
+
+
+            }
+        }
+
+        private void btnZamknij_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
